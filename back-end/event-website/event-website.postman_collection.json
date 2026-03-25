@@ -1,0 +1,1991 @@
+{
+	"info": {
+		"_postman_id": "dc2b425a-9b41-4f43-9b7b-b5f89cf253c7",
+		"name": "event-website",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33267136"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/IsraaMAzaraa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"IsraaMAzaraa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserProfilePicture",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/files/8f931819-e8ef-40ce-8417-7940b44c708a.png",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"files",
+								"8f931819-e8ef-40ce-8417-7940b44c708a.png"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Current User Info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/getProfilePicture/Admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getProfilePicture",
+								"Admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCurrentUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"firstName\": \"Admin\",\r\n    \"phoneNumber\": \"2232443\",\r\n    \"email\": \"admin@Admin.com\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJJc3JhYVRlc3QiLCJyb2xlcyI6WyJBRE1JTiJdLCJpYXQiOjE3MzEwNzc1NzMsImV4cCI6MTczMTE2Mzk3M30.LWMvamvDCJ9i_i4hlLZrQfyKR9jzPqJYql8Q-eiq9rQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/IsraaMazaraa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"IsraaMazaraa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Israastudent\",\r\n    \"firstName\": \"1111111111111111111111111111XYZ\",\r\n    \"phoneNumber\": \"324234\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"isEnabled\": false,\r\n    \"isVerified\": false,\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8077/api/v1/user/mohamm111ed",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8077",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"mohamm111ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Picture",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "payload",
+									"type": "file",
+									"src": "postman-cloud:///1efa343c-a1d0-4310-be29-1b7e2188a47d"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/profilePicture/Admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"profilePicture",
+								"Admin"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Admin\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGVzIjpbIlNVUEVSX0FETUlOIl0sImlhdCI6MTczNjQzODIzMiwiZXhwIjoxNzM2NTI0NjMyfQ.sclEhBA7uZDy6-LJlEmBRURPbUwk0fqR5gmIaq_SY-s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTdXBlckFkbWluIiwicm9sZXMiOlsiU1VQRVJfQURNSU4iXSwiaWF0IjoxNzM3OTcwODg3LCJleHAiOjE3MzgwNTcyODd9.IPRvbF6FfeaQ12BtmKwhcu4rcb3D8nekYXDhRobht9g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Admin\",\r\n\t\"email\": \"Admin@Admin.com\",\r\n\t\"firstName\": \"Israa\",\r\n\t\"lastName\": \"Mazaraa\",\r\n\t\"password\": \"123456\",\r\n    \"role\":\"ADMIN\",\r\n    \"phoneNumber\":\"059235684\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/add-admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"add-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StudentSignUp(Add student)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"Israa MAzaraa\",\r\n\t\"email\": \"israaMazaraa96@gmail.com\",\r\n\t\"firstName\": \"israaStu\",\r\n\t\"lastName\": \"israaStu\",\r\n\t\"phoneNumber\": \"+503 733 790 774\",\r\n\t\"password\": \"123456\",\r\n     \"role\":\"STUDENT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add teacher",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"ss\",\r\n\t\"email\": \"Mazaraa@gmail.com\",\r\n\t\"firstName\": \"Israa\",\r\n\t\"lastName\": \"MAzaraa\",\r\n\t\"password\": \"123456\",\r\n     \"role\":\"INSTRUCTOR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Organization",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"Intel\",\r\n\t\"email\": \"Intel@gmail.com\",\r\n\t\"firstName\": \"Israa\",\r\n\t\"lastName\": \"MAzaraa\",\r\n\t\"password\": \"123456\",\r\n     \"role\":\"ORGANIZATION\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGVzIjpbIlNVUEVSX0FETUlOIl0sImlhdCI6MTczMjg3OTY4MSwiZXhwIjoxNzMyOTY2MDgxfQ.iQ4KPrLnltoNGhoZz1IDVW6QkVqx2FfPPxK1GReze8E",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "GetStudentList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/studentList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"studentList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetStudentById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateStudentProfile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJNb2hhbWVkMjEiLCJyb2xlcyI6WyJTVFVERU5UIl0sImlhdCI6MTczNzk3MDE1OCwiZXhwIjoxNzM4MDU2NTU4fQ.4g0fnOc8cp2g8mCUTQDXLbM3iez7FiokBQWb1L3kr0A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"Mohamed21\",\r\n\t\"email\": \"Mohamed23@gmail.com\",\r\n\r\n\t\"firstName\": \"Mohamed23\",\r\n\t\"lastName\": \"Mohamed23\",\r\n\t\"phoneNumber\": \"05923558\",\r\n  \"jobTitle\": \"full stack\",\r\n  \"city\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/updateStudentProfile/IsraaMAzaraa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"updateStudentProfile",
+								"IsraaMAzaraa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateStudent",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"ISraaTest2\",\r\n    \"name\": \"ISraagggTest\",\r\n    \"phoneNumber\": \"324234\",\r\n    \"email\": \"israamazaraa96@gmail.com\",\r\n    \"isEnabled\": false,\r\n    \"isVerified\": false,\r\n        \"jobTitle\": \"full stack\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/updateStudent/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"updateStudent",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateStudent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"username\": \"israaStu\",\r\n\t\"email\": \"israabzu@gmail.com\",\r\n\t\"firstName\": \"israaStu\",\r\n\t\"lastName\": \"israaStu\",\r\n\t\"phoneNumber\": \"05923558\",\r\n  \"jobTitle\": \"full stack\",\r\n  \"city\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/updateStudentProfile/israaStu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"updateStudentProfile",
+								"israaStu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/delete/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetStudentByUser Name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/findByUsername/IsraaMAzaraa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"findByUsername",
+								"IsraaMAzaraa"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Organization",
+			"item": [
+				{
+					"name": "GetOrganizationList",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/organization/organizationList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"organization",
+								"organizationList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOrgnization",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/organization/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"organization",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOrganizationById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/organization/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"organization",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateOrganization",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "organizationDTO",
+									"value": "{\n  \"organizationName\": \"Asal .\",\n  \"contactEmail\": \"Asal@Asal.com\",\n  \"phoneNumber\": \"+1234567890\",\n  \"websiteUrl\": \"https://gazaskygeeks.com\",\n    \"username\": \"Asal\",\n  \"password\": \"adminPassword123\",\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"role\": \"ORGANIZATION\",\n   \"description\":\"Since 2011, we have been propelling Palestine’s digital economy and future technology leaders to transcend borders through cutting edge peer-led education and true grit.\"\n}\n",
+									"contentType": "application/json",
+									"type": "text"
+								},
+								{
+									"key": "payload",
+									"type": "file",
+									"src": "postman-cloud:///1efdb0c6-5a2b-4ff0-805c-d97812292270"
+								},
+								{
+									"key": "pictureFile",
+									"type": "file",
+									"src": "postman-cloud:///1efa343c-a1d0-4310-be29-1b7e2188a47d"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/organization/addNewOrganization",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"organization",
+								"addNewOrganization"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateOrganizationProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n    \"contactEmail\": \"asal@gamil.com\",\r\n    \"organizationName\": \"Asal\",\r\n    \"phoneNumber\": \"233\",\r\n    \"websiteUrl\": \"asal@asal\",\r\n    \"descriptionPicture\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/organization/updateOrganizationProfile/Asal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"organization",
+								"updateOrganizationProfile",
+								"Asal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateOrganization",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contactEmail\": \"asal@gamil.com\",\r\n    \"organizationName\": \"Asal\",\r\n    \"phoneNumber\": \"233\",\r\n    \"websiteUrl\": \"asal@asal\",\r\n    \"descriptionPicture\": null\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/organization/updateOrganization/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"organization",
+								"updateOrganization",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/organization/delete/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"organization",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOrganziationProfilePicture",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/files/fb915698-5090-4efe-920d-ac659214162f.png",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"files",
+								"fb915698-5090-4efe-920d-ac659214162f.png"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Instructor",
+			"item": [
+				{
+					"name": "GetInstructorList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/instructor/instructorList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"instructor",
+								"instructorList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetInstructorById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/instructor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"instructor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateInstructorProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"IsraaTeacher\",\r\n\t\"email\": \"IsraaTeacher@gmail.com\",\r\n\t\"firstName\": \"alaa\",\r\n\t\"lastName\": \"Mazaraa\",\r\n\t\"phoneNumber\": \"05923558\",\r\n  \"jobTitle\": \"full stack\",\r\n  \"city\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/instructor/updateInstructorProfile/Tamara",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"instructor",
+								"updateInstructorProfile",
+								"Tamara"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addNewInstructor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"johndoe\",\r\n  \"email\": \"johndoe@example.com\",\r\n  \"phoneNumber\": \"1234567890\",\r\n  \"firstName\": \"John\",\r\n  \"lastName\": \"Doe\",\r\n  \"password\": 123456,\r\n  \"isEnabled\": true,\r\n  \"isVerified\": false,\r\n  \"instructorEmail\": \"instructor.johndoe@example.com\",\r\n  \"jobTitle\": \"Senior Instructor\",\r\n  \"name\": \"John Doe\",\r\n  \"profilePictureUrl\": \"https://example.com/profile/johndoe.jpg\",\r\n  \"role\": \"INSTRUCTOR\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/instructor/addNewInstructor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"instructor",
+								"addNewInstructor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateInstructor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"ISraaTest2\",\r\n    \"name\": \"ISraagggTest\",\r\n    \"phoneNumber\": \"324234\",\r\n    \"email\": \"israamazaraa96@gmail.com\",\r\n    \"isEnabled\": false,\r\n    \"isVerified\": false,\r\n        \"jobTitle\": \"full stack\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/instructor/updateInstructor/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"instructor",
+								"updateInstructor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/instructor/delete/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"instructor",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "GetCityList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/city/cityList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"city",
+								"cityList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/city/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"city",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"nameEn\":\"Jeninin\",\r\n    \"nameAr\":\"جنين\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/city/addCity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"city",
+								"addCity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCity",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nameEn\":\"Ramallah\",\r\n    \"nameAr\":\"رام الله\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/city/updateCity/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"city",
+								"updateCity",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/city/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"city",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "softDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/city/deleteCity/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"city",
+								"deleteCity",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "GetContactList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contact/contactList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"contactList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetContact",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contact/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addContact",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"name\": \"IsraaMazataa Doe\",\r\n  \"phone\": \"+1234567890\",\r\n  \"email\": \"john.doe@example.com\",\r\n  \"message\": \"This is a test message.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contact/addContact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"addContact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addReplay",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"replay\": \"ررررررررررررررررر\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contact/addReplay/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"addReplay",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateContact",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"name\": \"John Doe\",\r\n  \"phone\": \"+1234567890\",\r\n  \"email\": \"john.doe@example.com\",\r\n  \"message\": \"This is a test message.\"\r\n \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contact/updateContact/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"updateContact",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contact/delete/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"delete",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "softDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/contact/deleteContact/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"contact",
+								"deleteContact",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Training",
+			"item": [
+				{
+					"name": "GetCourseList",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/training/courseList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"training",
+								"courseList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTrainingById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/training/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"training",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTrainingImages",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/training/1/pictures",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"training",
+								"1",
+								"pictures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetEventList",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/training/eventList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"training",
+								"eventList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createTrainingCourseWithout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"training\": {\r\n    \"trainingName\": \"SPRING BOOT\",\r\n    \"trainingDescription\": \"A confasderence about the latest in technology.\",\r\n    \"numberOfStudentsEnrolled\": 0,\r\n    \"endRegistration\": \"2025-02-01\",\r\n    \"type\":\"TRAINING_COURSE\"\r\n    \r\n  },\r\n  \"organizationIds\": [1],\r\n  \"instructorIds\": [1]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/training/addingNew",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"training",
+								"addingNew"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddingTrainingwithFile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": [
+										"postman-cloud:///1efe057f-ea0e-4ab0-bce6-38253a84ecfa",
+										"postman-cloud:///1efe0584-c034-4000-ba61-b19fe42dd737"
+									]
+								},
+								{
+									"key": "trainingData",
+									"value": "{\n  \"training\": {\n    \"trainingName\": \"Angular course\",\n    \"trainingDescription\": \"Angular is a web framework that empowers developers to build fast, reliable applications..\",\n    \"numberOfStudentsEnrolled\": 0,\n    \"endRegistration\": \"2025-02-01\",\n    \"type\":\"TRAINING_COURSE\"\n    \n  },\n  \"organizationIds\": [1],\n  \"instructorIds\": [1]\n}\n",
+									"contentType": "application/json",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/training/adding",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"training",
+								"adding"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateTrainingWithout",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"training\": {\r\n    \"trainingName\": \"training course update 16\",\r\n    \"trainingDescription\": \"A confasderence about the latest in technology.\",\r\n    \"numberOfStudentsEnrolled\": 5,\r\n    \"endRegistration\": \"2025-02-01\",\r\n    \"startDate\":\"2025-02-20\",\r\n    \"endDate\":\"2025-04-20\",\r\n    \"type\":\"TRAINING_COURSE\"\r\n    \r\n  },\r\n  \"organizationIds\": [1],\r\n  \"instructorIds\": [1]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/training/update/16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"training",
+								"update",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateWithFile",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": [
+										"postman-cloud:///1efe0584-c034-4000-ba61-b19fe42dd737",
+										"postman-cloud:///1efe057f-ea0e-4ab0-bce6-38253a84ecfa"
+									]
+								},
+								{
+									"key": "trainingCreationDTO",
+									"value": "{\n  \"training\": {\n    \"trainingName\": \"Angular course\",\n    \"trainingDescription\": \"Angular is a web framework that empowers developers to build fast, reliable applications..\",\n    \"numberOfStudentsEnrolled\": 0,\n    \"endRegistration\": \"2025-02-01\",\n    \"type\":\"TRAINING_COURSE\"\n    \n  },\n  \"organizationIds\": [1],\n  \"instructorIds\": [22,1]\n}\n",
+									"contentType": "application/json",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/training/updateWithFile/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"training",
+								"updateWithFile",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTraining",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/training/deleteTraining/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"training",
+								"deleteTraining",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RegistrationStudent",
+			"item": [
+				{
+					"name": "GetRegistrationList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/registration/registrationList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"registration",
+								"registrationList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetRegistrationById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/registration/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"registration",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegistrationListByStudent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/registration/studentListRegistraion/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"registration",
+								"studentListRegistraion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegistrationListByStudentId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/registration/studentList/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"registration",
+								"studentList",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StudentRegistraion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"studentId\":1,\r\n  \"trainingId\":3,\r\n  \"enrolled\": false,\r\n  \"notes\": \"Student is registered for the event, pending approval.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/registration/createRegistration",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"registration",
+								"createRegistration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AcceptStudentRegistraion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsInJvbGVzIjpbIkFETUlOIl0sImlhdCI6MTczODMyNTIwOSwiZXhwIjoxNzM4NDExNjA5fQ.y_7c_do7SvXGLeuR_ECkALylVOZxeYMG57aCZjJMA9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "http://localhost:8080/api/v1/registration/accept/1",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/registration/accept/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"registration",
+								"accept",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RejectedStudentRegistraion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/registration/reject/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"registration",
+								"reject",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteRegistrationStudent",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/registration/deleteRegistrationStudent/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"registration",
+								"deleteRegistrationStudent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTdXBlckFkbWluIiwicm9sZXMiOlsiU1VQRVJfQURNSU4iXSwiaWF0IjoxNzM4MzE1MzAzLCJleHAiOjE3Mzg0MDE3MDN9.9-ithT07vX-PZcQn9VkZMD8IzLCzJ-7-nv1lAHv7Zno",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

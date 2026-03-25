@@ -1,0 +1,258 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+}
+
+/* Left Text Section */
+.text-section {
+    max-width: 50%;
+}
+
+.text-section h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.text-section .cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.text-section .cta-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Form Section Wrapper */
+.form-section-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adjusted Circle Styling */
+.circle-image{
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    z-index: 1;
+    opacity: 0.7;
+    top: 15%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+.circle-image-2{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    z-index: 1;
+    opacity: 0.7;
+    top: 90%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* Signup Form Section */
+.form-section {
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.9), rgba(0, 0, 0, 0.9)); /* Added transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    z-index: 2;
+}
+
+.form-section h2 {
+    margin: 0 0 20px;
+    font-size: 1.5rem;
+}
+
+.form-section p {
+    margin: 0 0 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+}
+
+.form-section button {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-section button:hover {
+    opacity: 0.8;
+}
+
+/* Social Login Icons */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+
+.social-login i {
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+/* Hover Effect for Icons */
+.social-login i:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Links */
+.links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+/* Social Login Section */
+.social-login-section {
+    text-align: center;
+    color: #aaa;
+    margin-top: 20px;
+}
+
+.social-login-section p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* Icon Colors */
+.social-login .fa-google {
+    color: #DB4437;
+}
+.social-login .fa-facebook-f {
+    color: #1877F2;
+}
+.social-login .fa-github {
+    color: #333333;
+}
+
+
+
+/* Already Registered Section */
+.already-registered {
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+.already-registered a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.already-registered a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.line-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.line-wrapper p {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+
+
+
+.dashed-line-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.dashed-line {
+    width: 100%;
+    height: 1px;
+    border-top: 2px dashed #ccc;
+    margin-top: 40px;
+    margin-left: 18px;
+}

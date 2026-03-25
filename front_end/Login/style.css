@@ -1,0 +1,248 @@
+body{
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  /* font-weight: 600;
+  font-size: 36px;
+  line-height: 49px; */
+background-color: #1E1E1E;
+background: #0F0F0F;
+display: flex;
+justify-content: center;
+height: 100vh;
+
+}
+.container{
+display: flex;
+    /* margin: auto; */
+    width: 111%;
+    max-width: 1200px;
+    color: white;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    /* align-content: center; */
+    height: 80%;
+
+}
+.circle-top{
+/* position: absolute;
+width: 14%;
+height: 160px;
+left: 53%;
+top: 18%;
+border-radius: 50%;
+background: linear-gradient(180deg, #530061 0%, #0D0A30 100%);
+opacity: 0.7; */
+position: absolute;
+width: 38%;
+height: 160px;
+right: 82%;
+/* top: 49%; */
+top: -49px;
+border-radius: 50%;
+background: linear-gradient(180deg, #530061 0%, #0D0A30 100%);
+opacity: 0.7;
+
+}
+
+.circle-bottom{
+/* box-sizing: border-box;
+position: absolute;
+width: 10%;
+height: 136px;
+left: 69%;
+bottom: 14%;
+background: #350169;
+border-radius: 50%;
+opacity: 0.7; */
+box-sizing: border-box;
+position: absolute;
+width: 38%;
+height: 136px;
+left: 71%;
+bottom: -4%;
+background: #350169;
+border-radius: 50%;
+opacity: 0.7;
+}
+
+.content {
+display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 2;
+    width: 100%;
+    gap: 10px;
+    /* border: 1px solid red; */
+    /* height: 75vh; */
+    padding-left: 20px;
+}
+
+
+
+.left-side {
+  width: 70%;
+  max-width: 650px;
+  align-self: center;
+  align-content: center;
+}
+
+.left-side h1 {
+  font-size: 5rem;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+
+}
+.left-side-skip{
+  display: flex;
+      align-items: center;
+      align-content: center;
+  
+}
+.right-side{
+  position: relative;
+width: auto;
+align-self: center;
+max-width: 500px;
+padding: 10px;
+align-content: center;
+}
+.skip-btn {
+  /* margin-top: 20px; */
+  background: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.dashed-border {
+  width: 80%;
+  border-top: 2px dashed #333;
+  margin: auto 0px;
+}
+
+
+.login{
+  position: relative;
+
+  z-index: 1;
+  width: auto;
+  border: 1px solid;
+  height: auto;
+ 
+  background: #181818;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(321.23deg, rgba(191, 191, 191, 0.062) 5.98%, rgba(0, 0, 0, 0) 66.28%), rgba(0, 0, 0, 0.14);
+  box-shadow: -8px 4px 5px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(26.5px);
+  border-radius: 20px;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.login h2 {
+  font-size: 1.5rem;
+}
+
+.login form {
+  margin-top: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 12px;
+  background: #252525;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.login a{
+color: white;
+text-decoration: none
+}
+.donNot{
+  text-align: center;
+  /* position: abso;
+  width: auto;
+  top: 36px;
+  text-align: center; */
+  margin-top:50px;
+}
+.login a.forget{
+margin: 12px;
+  text-align: center;
+}
+.or-line{
+display: flex;
+gap:8px;
+color: #4D4D4D;
+
+}
+.line{
+align-self: center;
+height: auto;
+width: 50%;
+border: 1px solid;
+}
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.login-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background: linear-gradient(135deg, #6600ff, #ff00ff);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.social-login {
+display: flex;
+justify-content: center;
+margin: 20px 0;
+}
+
+.social-login i {
+font-size: 30px;
+margin: 0 10px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.social-login .fa-google {
+color: #DB4437; 
+}
+
+.social-login .fa-facebook-f {
+color: #1877F2; 
+}
+
+.social-login .fa-github {
+color: white; 
+}
+
+.social-login i:hover { 
+  transform: scale(1.1); 
+}
